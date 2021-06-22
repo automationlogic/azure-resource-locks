@@ -1,6 +1,6 @@
 # Resource locking by subscription
 
-This terraform project manages all the VM and storage account locks using the az cli which is initiated before the apply, plan and destroy commands.
+This terraform project allows you to lock all VMs and storage accounts in a subscription. Uses the az cli which is initiated before the apply, plan and destroy commands.
 
 ## Limitations
 Due to external provider not able to deal with non-trivial json objects: https://github.com/hashicorp/terraform-provider-external/issues/2. We are loading in the vm list manually using az cli.
