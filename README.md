@@ -15,7 +15,7 @@ Due to external provider not able to deal with non-trivial json objects: https:/
 
 ## How to
 
-* add the tenant id in the main terragrunt hcl
+* add the tenant id in the main terragrunt hcl, may need to set up the remote state.
 * Simply cd into one of the environments and add your subscription id in the terragrunt HCL
 * or create your own by replicating the existing terragrunt.hcl in the other environments.
 * apply the terraform and it will lock all storage accounts and VMs
