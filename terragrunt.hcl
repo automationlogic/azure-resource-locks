@@ -10,7 +10,7 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    tenant_id            = "747381f4-e81f-4a43-bf68-ced6a1e14edf" # DO NOT DELETE! While these values dont do anything in terraform unless you're using a managed identity, we store them for dso internal use.
+    tenant_id            = "" # DO NOT DELETE! While these values dont do anything in terraform unless you're using a managed identity, we store them for dso internal use.
     resource_group_name  = "dso-terraform-state"
     storage_account_name = "dsoinfraazurefixngo${local.environment_name }"
     key                  = "${local.project_name}/${local.project_name}-${local.environment_name}.tfstate"
