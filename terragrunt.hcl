@@ -11,7 +11,7 @@ remote_state {
   }
   config = {
     tenant_id            = "" # DO NOT DELETE! While these values dont do anything in terraform unless you're using a managed identity, we store them for dso internal use.
-    resource_group_name  = "dso-terraform-state"
+    resource_group_name  = "terraform-state"
     storage_account_name = "azure${local.environment_name }"
     key                  = "${local.project_name}/${local.project_name}-${local.environment_name}.tfstate"
     container_name       = local.project_name
